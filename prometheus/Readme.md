@@ -1,0 +1,1 @@
+kubectl create secret -n monitoring generic admin --from-file auth
