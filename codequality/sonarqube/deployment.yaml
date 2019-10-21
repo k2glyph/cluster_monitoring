@@ -30,6 +30,9 @@ spec:
             name: sonar-data
           - mountPath: "/opt/sonarqube/extensions/"
             name: sonar-extensions
+          - mountPath: "/opt/sonarqube/conf/sonar.properties"
+            subPath: "sonar.properties"
+            name: config-volume
           env:
           - name: "SONARQUBE_JDBC_USERNAME"
             value: "admin"
@@ -50,3 +53,6 @@ spec:
       - name: sonar-extensions
         persistentVolumeClaim:
           claimName: sonar-extensions
+      - name: config-volume
+        configMap:
+          name: sonar-config
