@@ -5,7 +5,7 @@ imageTag: "3.5.11"
 imagePullPolicy: "IfNotPresent"
 # imagePullSecret: registry-secret
 acceptLicenseAgreement: "yes"
-neo4jPassword: "tz!E3MEHE3u1G&H%u#oDmUFgQ"
+
 podDisruptionBudget: {}
   # minAvailable: 2
   # maxUnavailable: 1
