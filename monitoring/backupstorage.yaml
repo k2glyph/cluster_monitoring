@@ -1,0 +1,12 @@
+apiVersion: velero.io/v1
+kind: BackupStorageLocation
+metadata:
+  name: default
+  namespace: velero
+spec:
+  provider: gcp
+  objectStorage:
+    bucket: velera
+  config:
+    region: asia-southeast1
+    profile: "default"
